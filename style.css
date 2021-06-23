@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.test {
+  display: inline-block;
+}
+
 .logo-container {
   width: 24px;
   height: 24px;
