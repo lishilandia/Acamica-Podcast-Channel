@@ -56,7 +56,7 @@ html {
 }
 
 .menu-options-links {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 28px;
@@ -146,7 +146,7 @@ html {
 
 .title-1 {
   height: 50px;
-  font-family: "IBM Plex Sans", monospace;
+  font-family: 'IBM Plex Sans', monospace;
   font-size: 55px;
   color: #060a24;
   display: flex;
@@ -157,7 +157,7 @@ html {
 }
 
 section .title-5 {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   color: #060a24;
   font-weight: normal;
@@ -205,7 +205,7 @@ section .title-5 {
 
 .de-donde-venimos p {
   width: 470px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bolder;
   color: #060a24;
   line-height: 24px;
@@ -359,7 +359,7 @@ section.parent-btnb {
   }
 
   .menu-options-links {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     color: #ffffff;
     letter-spacing: 0;
@@ -437,7 +437,7 @@ section.parent-btnb {
   }
 
   section.title-1b {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
     color: #060a24;
     display: flex;
@@ -447,7 +447,7 @@ section.parent-btnb {
   }
 
   section .title-5b {
-    font-family: "IBM Plex Mono";
+    font-family: 'IBM Plex Mono';
     font-size: 13px;
     font-weight: normal;
     color: #060a24;
@@ -511,7 +511,7 @@ section.parent-btnb {
 
   .de-donde-venimosb p {
     width: 300px;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: 'IBM Plex Mono', monospace;
     color: #060a24;
     line-height: 24px;
     position: relative;
