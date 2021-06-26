@@ -32,8 +32,9 @@
     />
   </head>
   <body>
-    <section class="cabezera">
+
       
+    <section class="cabezera">
       <nav class="nav-bar">
         <img class="logo-container" src="fotos/logo.svg" alt="Podcasts logo">
         <img class="logo-containerb" src="fotos/logo.svg" alt="Podcasts logo">
@@ -74,7 +75,9 @@
         <button class="btnb" type="button" onclick="btnClick();">CONOCÉ MÁS</button>
       </section>
     </section>
-    <div id="episodios">
+
+    <div id="episodios"></div>
+    <!-- <div id="episodios"> -->
     <section class="Episodios">
       <div class="rectangulo">
         <p style= "font-family: IBM Plex Sans; font-size: 48px; color:white; position: relative; top: 190px; padding-left:200px; font-weight: lighter">Episodios</p>
@@ -129,7 +132,7 @@
 
     <section class="Episodiosb">
       <section class="rectangulob">
-        <p style="font-family: IBM Plex Sans; font-size: 40px; color:white; font-weight: normal; position: relative; top: 20px; left: 27px;">Episodios</p>
+        <p style="font-family: IBM Plex Sans; font-size: 40px; color:white; font-weight: normal; position: relative; top: 60px; left: 27px;">Episodios</p>
         <section class="spotifyb">
           <iframe
             src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
@@ -159,40 +162,38 @@
         </section>
       </section>
     </section>
-  </div>
-
-  
-  <div id="nosotros">
+    <!-- </div> -->
     
-    <section class="phone-de">
-      <div class="phone" style="margin-left:450px">
-        <img src="fotos/phone.png" alt="la historia secreta de la mujer codeando" style="height: 650px; width: 400px; position:relative; top:-120px;">
+  <div id="nosotros"></div>
+  <!-- <div id="nosotros"> -->
+    <section  class="phone-de">
+      <div  class="phone" style="margin-left:450px">
+        <img src="fotos/phone.png" alt="la historia secreta de la mujer codeando" style="height: 650px; width: 400px; position:relative; top:-250px;">
       </div>
-      <section class="de-donde-venimos" style="width:470px; padding-left:100px;">
-        <p style="font-weight: normal; font-size:48px; text-align: right">De dónde venimos</p>
+      <section class="de-donde-venimos" style="width:470px; padding-left:80px;">
+        <p style="font-weight: normal; font-size:48px; text-align: right; position: relative; top: -40px">De dónde venimos</p>
         
         <p style="font-size: 16px; text-align: left; font-weight: normal">Our posterings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
           </br></br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is not hint that help will come from elsewhere to save us from ourselves.
         </p>
       </section>
     </section>
-    
     <section class="phone-deb">
       <section class="phoneb">
         <img src="fotos/phone.png" alt="la historia secreta de la mujer codeando" style="height: 480px; width: 97%; position:relative; top:-55px">
       </section>
       <section class="de-donde-venimosb" style="width:20%">
-        <p style="font-weight: normal; font-size:36px; text-align: left; line-height: 45px;">De dónde venimos</p>
+        <p style="font-weight: normal; font-size:36px; text-align: left; line-height: 45px;">De dónde venimos</p> 
         <p style="font-size: 14px; text-align: left; font-weight: normal">Our posterings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
           </br></br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is not hint that help will come from elsewhere to save us from ourselves.
         </p>
       </section>
     </section>
-  </div>
+  <!-- </div> -->
 
   <div id="entrevistas" style=" position: relative;  top: -250px;">
     <section class="Entrevistas">
-      <p style= "font-family: IBM Plex Sans; font-size: 48px;
+      <p  style= "font-family: IBM Plex Sans; font-size: 48px;
       letter-spacing: 0; position: relative; padding-left: 200px">Invitada/os y estelares</p>
       <section class="invitadas">
         <div class="foto1">
@@ -207,11 +208,12 @@
         </div>
       </section>
     </section>
+  </div>
 
-    <section class="Entrevistas-b" style=" position: relative;  top: 250px;">
-      <p style= "font-family: IBM Plex Sans; font-size: 36px;
-      letter-spacing: 0; position: relative; top: -160px; left: 20px"> Invitada/os estelares</p>
-      <section style="position: relative; top:-170px; display: flex; flex-direction: column; align-items: stretch">
+    <section class="Entrevistas-b" style=" position: relative;  top: 350px;">
+      <p id="entrevistasb" style= "font-family: IBM Plex Sans; font-size: 36px;
+      letter-spacing: 0; position: relative; top: -200px; left: 20px"> Invitada/os estelares</p>
+      <section style="position: relative; top:-180px; display: flex; flex-direction: column; align-items: stretch">
         <img src="fotos/grace-hopper.png" alt="Grace-Hopper" width="100%" height="364px"> 
         <img src="fotos/Katie-Bouman.png" alt="Katie-Boeuman" width="100%" height="364px">
         <img src="fotos/Margaret_Hamilton.png" alt="Margaret_Hamilton" width="100%" height="364px">
@@ -222,10 +224,10 @@
     </section>
   </div>
 
-
-    <div id="topicos">
-      <section class="Topicos">
-        <p style="font-family: IBM Plex Sans; font-size: 48px; padding-left: 200px; padding-top: -30px">Algunos de nuestros temas</p>
+  <div id="topicos" >
+      <section  class="Topicos" style="position: relative;
+    top: 120px;">
+        <p style="font-family: IBM Plex Sans; font-size: 48px; padding-left: 200px; padding-top: -0px">Algunos de nuestros temas</p>
         <section class="algunos-de-nuestros-temas">
           <img src="fotos/icon1.svg" alt="Trabajo Remoto">
           <img src="fotos/icon2.svg" alt="Repensando la programación">
@@ -242,7 +244,7 @@
       </section>
 
       <section class="Topicos-b">
-        <p style="font-family: IBM Plex Sans; font-size: 34px">Algunos de nuestros temas</p>
+        <p id="topicosb" style="font-family: IBM Plex Sans; font-size: 34px">Algunos de nuestros temas</p>
         <section class="algunos-de-nuestros-temasb" style="font-family: IBM Plex Sans; font-weight: bolder;
         font-size: 24px; text-align: center">
           <img src="fotos/icon1.svg" alt="Trabajo Remoto">
@@ -255,15 +257,24 @@
           <p >Seguridad  informática</p>       
         </section>
       </section>
-    </div>
-    
+  </div>
+      <footer>
 
-    <section class="rectangulo2">
+     <section class="rectangulo2">
       <p  style="font-family: IBM Plex Sans; font-size: 48px; font-weight: normal; color: white; text-align: center; position: relative; left: 0px; top: 220px">¿Querés las últimas novedades?</p>
       <section style="position: relative; padding-left: 600px; top: 220px;">
         <button class="btn2">ESCUCHÁ LOS EPISODIOS</button>
       </section>
     </section>
+    
+
+    <section class="rectangulo2b">
+      <p style="font-family: IBM Plex Sans; font-size: 36px; font-weight: normal; color: white; text-align: center; position: relative; left: 60px; top: 60px; width: 60%;">¿Querés las últimas novedades?</p>
+      <section style="position: relative;">
+        <button class="btn2b">ESCUCHÁ LOS EPISODIOS</button>
+      </section>
+    </section>
+
     <div class="last-box">
       <p style="font-family: IBM Plex Mono; font-size: 16px; font-weight: normal; color: #060A24; line-height: 28px; padding-left: 100px">© 2019— Hello blue pale dot</p>
       <a href="https://www.spotify.com/cl/"><i class="fab fa-spotify" style="padding-left: 800px;"></i></a>
@@ -272,17 +283,8 @@
       <a href="https://es-la.facebook.com/"><i class="fab fa-facebook" ></i></a>
       <a href="https://telegram.org/"><i class="fab fa-telegram" ></i></a>
     </div>
-
-    <section class="rectangulo2b">
-      <p style="font-family: IBM Plex Sans; font-size: 36px; font-weight: normal; color: white; text-align: center; position: relative; left: 0px; top: 30px">¿Querés las últimas novedades?</p>
-      <section style="position: relative;">
-        <button class="btn2b">ESCUCHÁ LOS EPISODIOS</button>
-      </section>
-    </section>
-
-    
-      <div class="last-boxb">
-        <p style="font-family: IBM Plex Mono; font-size: 14px; font-weight: normal; color: #060A24; line-height: 28px; position: relative; left: 30px; top: 10px">© 2019— Hello blue pale dot</p>
+     <div class="last-boxb">
+        <p style="font-family: IBM Plex Mono; font-size: 14px; font-weight: normal; color: #060A24; line-height: 28px; position: relative; left: 30px; top: 170px">© 2019— Hello blue pale dot</p>
       </div>
       <div class="last-box2b">
         <a href="https://www.spotify.com/cl/"><i class="fab fa-spotify"></i></a>
@@ -291,7 +293,11 @@
         <a href="https://es-la.facebook.com/"><i class="fab fa-facebook" ></i></a>
         <a href="https://telegram.org/"><i class="fab fa-telegram" ></i></a>
       </div>
-      <script>
+    </footer>
+  </body>
+
+  
+    <script>
     var docWidth = document.documentElement.offsetWidth;
 
     [].forEach.call(
@@ -303,5 +309,4 @@
       }
     );
   </script>
-  </body>
 </html>
