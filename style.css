@@ -109,7 +109,7 @@ html {
 
 #chk-nav-bar:checked ~ .menu-options,
 #chk-nav-bar:checked ~ #burger-close {
-  display: block;
+  display: none;
 }
 
 .inicial {
@@ -359,23 +359,28 @@ section.parent-btnb {
   position: absolute;
   top: 2800px;
 }
-
+/* .nav-bar {
+  overflow: hidden;
+} */
 @media screen and (max-width: 401px) {
   .menu > ul > li > a {
     display: none;
   }
   .menu-options {
-    display: none;
+    /* display: none; */
     justify-self: flex-start;
     position: absolute;
     top: 24px;
     width: 100%;
+    transform: translateX(120%);
+    transition: all 0.3s ease;
+    /* top: 50px;
+    overflow: hidden; */
   }
 
-  ul.menu-options {
-    /* transform: translateX(100%); */
-    transition: all 2s ease;
-  }
+  /* .nav-bar {
+    display: block;
+  } */
 
   .menu-options li {
     list-style-type: none;
@@ -410,6 +415,8 @@ section.parent-btnb {
   #chk-nav-bar:checked ~ .menu-options,
   #chk-nav-bar:checked ~ #burger-close {
     display: block;
+    transform: translateX(0%);
+    overflow: hidden;
   }
 
   #episodios {
