@@ -1,14 +1,22 @@
-*body {
+/* body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   overflow-x: hidden;
-}
+  scrollbar-width: none;
+} */
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
 html {
@@ -161,9 +169,27 @@ section .title-5 {
   top: 100px;
 }
 
+.rectangulo p {
+  font-family: 'IBM Plex Sans';
+  font-size: 48px;
+  color: white;
+  position: relative;
+  top: 190px;
+  padding-left: 200px;
+  font-weight: lighter;
+}
+
 .spotify {
   display: flex;
   justify-content: space-evenly;
+  margin-left: -50px;
+  margin-top: 30px;
+  padding-top: 180px;
+}
+
+.spotify-col1,
+.spotify-col2 {
+  width: 544px;
 }
 
 .de-donde-venimos p {
@@ -262,7 +288,7 @@ section .title-5 {
   transform: translateY(-10px);
 }
 
-.mobile-menu {
+/* .mobile-menu {
   display: none;
 }
 
@@ -278,18 +304,18 @@ section .title-5 {
   text-decoration: none;
   padding-left: 50px;
   padding-top: 10px;
-}
+} */
 
-.nav-menu-movil {
+/* .nav-menu-movil {
   transform: translateX(100%);
   transition: all 1s ease;
   position: relative;
   top: -90px;
 }
-
-ul.nav-menu {
+ */
+/* ul.nav-menu {
   list-style-type: none;
-}
+} */
 
 #hamburguesa {
   display: none;
@@ -316,7 +342,7 @@ section.parent-btnb {
 
 #episodios {
   position: absolute;
-  top: 520px;
+  top: 500px;
 }
 
 #nosotros {
@@ -324,7 +350,17 @@ section.parent-btnb {
   top: 1200px;
 }
 
-@media screen and (max-width: 321px) {
+#entrevistas {
+  position: absolute;
+  top: 1900px;
+}
+
+#topicos {
+  position: absolute;
+  top: 2800px;
+}
+
+@media screen and (max-width: 401px) {
   .menu > ul > li > a {
     display: none;
   }
@@ -334,6 +370,11 @@ section.parent-btnb {
     position: absolute;
     top: 24px;
     width: 100%;
+  }
+
+  ul.menu-options {
+    /* transform: translateX(100%); */
+    transition: all 2s ease;
   }
 
   .menu-options li {
@@ -372,19 +413,27 @@ section.parent-btnb {
   }
 
   #episodios {
-    top: 420px;
+    top: 385px;
   }
 
   #nosotros {
-    top: 1520px;
+    top: 1600px;
+  }
+
+  #entrevistas {
+    top: 2550px;
+  }
+
+  #topicos {
+    top: 4900px;
   }
 
   .menu > ul > li > a,
   .btn,
   .title-1,
   .title-5,
-  .Episodios,
-  .Entrevistas,
+  /* .Episodios, */
+  section.Entrevistas,
   .phone-de,
   .rectangulo2,
   .last-box,
@@ -416,6 +465,9 @@ section.parent-btnb {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-left: -110px;
+    width: 70%;
+    min-width: 280px;
   }
 
   section .title-5b {
@@ -459,7 +511,57 @@ section.parent-btnb {
     height: 70px;
   }
 
-  section.rectangulob {
+  .rectangulo {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 40px;
+    height: 1400px;
+    width: 100%;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 2%);
+  }
+
+  .rectangulo p {
+    font-family: 'IBM Plex Sans';
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 60px;
+    padding-left: 27px;
+    font-weight: normal;
+  }
+
+  .spotify {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 60px;
+    top: -220px;
+  }
+
+  .spotify-col1,
+  .spotify-col2 {
+    width: 110%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  .spotify-col2 {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spotify-col1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*   section.rectangulob {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -476,14 +578,14 @@ section.parent-btnb {
     align-items: center;
     position: relative;
     top: -80px;
-  }
+  } */
 
   section.phone-deb {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: -120px;
+    top: -20px;
   }
 
   .de-donde-venimosb p {
@@ -492,7 +594,7 @@ section.parent-btnb {
     color: #060a24;
     line-height: 24px;
     position: relative;
-    top: -30px;
+    top: -50px;
     left: -110px;
   }
 
@@ -505,10 +607,11 @@ section.parent-btnb {
 
   section.Topicos-b {
     display: flex;
-    width: 80%;
+    /* width: 80%; */
     position: relative;
-    left: 10px;
-    top: 70px;
+    /* left: 10px; */
+    padding-left: 20px;
+    top: 150px;
     flex-wrap: wrap;
   }
 
@@ -552,7 +655,7 @@ section.parent-btnb {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    top: 160px;
+    top: 230px;
     height: 341px;
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 8%);
@@ -567,7 +670,7 @@ section.parent-btnb {
     font-weight: normal;
     font-size: 18px;
     position: relative;
-    left: 20px;
+    left: 50px;
     cursor: pointer;
     transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
   }
@@ -589,7 +692,7 @@ section.parent-btnb {
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-    top: 210px;
+    top: 280px;
     padding-bottom: 35px;
   }
 
