@@ -1,23 +1,30 @@
-*body {
-  margin: 0px;
+* {
   padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
-* {
-  padding: 0px;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+.logo {
+  position: relative;
+  padding-left: 100px;
+}
+
 .logo-container {
   width: 24px;
   height: 24px;
-  padding: 10px 16px;
   margin-left: 50px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 .hamburger {
@@ -42,6 +49,7 @@ html {
   top: 0px;
   width: 100%;
   justify-self: flex-start;
+  z-index: 2;
 }
 
 .menu-options li {
@@ -56,7 +64,7 @@ html {
 }
 
 .menu-options-links {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 28px;
@@ -96,78 +104,31 @@ html {
   display: block;
 }
 
-/******
-
-.logo {
-  position: relative;
-  padding-left: 50px;
-  top: 10px;
-}
-
-.menu ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: baseline;
-  position: relative;
-  top: -50px;
-}
-
-.menu ul li {
-  list-style-type: none;
-  cursor: pointer;
-  padding: 20px;
-  font-family: IBM Plex Mono;
-  font-size: 16px;
-}
-
-.menu > ul > li > a {
-  color: black;
-}
-.menu > ul > li > a:link {
-  color: black;
-  text-decoration: none;
-  transition: background-color 0.5s;
-}
-.menu > ul > li > a:hover {
-  color: #00f3bb;
-  text-decoration-line: line-through;
-}
-
-.menu ul li a:visited {
-  text-decoration: none;
-}
-
-*****/
-
 .inicial {
   display: block;
 }
 
 .title-1 {
   height: 50px;
-  font-family: "IBM Plex Sans", monospace;
+  font-family: 'IBM Plex Sans', monospace;
   font-size: 55px;
   color: #060a24;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 200px;
-  /* margin-top: 130px; */
 }
 
 section .title-5 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
   color: #060a24;
   font-weight: normal;
   line-height: 24px;
   width: 650px;
-  height: 70px;
-  padding-right: 100px;
-  margin-right: 100px;
-  padding-left: 200px;
-  padding-top: 10px;
+  position: relative;
+  top: 20px;
+  left: 200px;
 }
 
 .btn {
@@ -181,6 +142,8 @@ section .title-5 {
   border: 1px solid #00f3bb;
   cursor: pointer;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  position: relative;
+  top: 70px;
 }
 
 .btn:hover {
@@ -191,21 +154,41 @@ section .title-5 {
 
 .rectangulo {
   height: 1040px;
-  width: 1500px;
+  width: 1440px;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 15%);
   position: relative;
-  top: -80px;
+  top: 100px;
+}
+
+.rectangulo p {
+  font-family: 'IBM Plex Sans';
+  font-size: 48px;
+  color: white;
+  position: relative;
+  top: 190px;
+  padding-left: 200px;
+  font-weight: lighter;
 }
 
 .spotify {
   display: flex;
   justify-content: space-evenly;
+  margin-left: -50px;
+  margin-top: 30px;
+  padding-top: 180px;
+}
+
+.spotify-col1,
+.spotify-col2 {
+  width: 544px;
+  display: flex;
+  flex-direction: column;
 }
 
 .de-donde-venimos p {
   width: 470px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bolder;
   color: #060a24;
   line-height: 24px;
@@ -215,9 +198,19 @@ section .title-5 {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -110px;
+  top: 200px;
+  right: 100px;
 }
 
+.Entrevistas {
+  position: relative;
+  top: 250px;
+}
+
+.invitadas {
+  position: relative;
+  top: 40px;
+}
 .foto1 {
   display: flex;
   flex-direction: row;
@@ -240,9 +233,11 @@ section .title-5 {
 
 .rectangulo2 {
   height: 550px;
-  width: 1500px;
+  width: 1440px;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 30%);
+  position: relative;
+  top: 130px;
 }
 
 .btn2 {
@@ -256,6 +251,9 @@ section .title-5 {
   text-align: center;
   cursor: pointer;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  position: relative;
+  top: 30px;
+  right: 40px;
 }
 
 .btn2:hover {
@@ -272,7 +270,7 @@ section .title-5 {
   justify-content: space-around;
   align-items: baseline;
   position: relative;
-  top: 20px;
+  top: 170px;
 }
 
 .fab {
@@ -282,35 +280,6 @@ section .title-5 {
 .fab:hover {
   color: #00f3bb;
   transform: translateY(-10px);
-}
-
-.mobile-menu {
-  display: none;
-}
-
-.nav-menu-movil li a {
-  height: 50px;
-  width: 300px;
-  display: flex;
-  color: white;
-  background-color: blue;
-  cursor: pointer;
-  font-family: IBM Plex Mono;
-  font-size: 16px;
-  text-decoration: none;
-  padding-left: 50px;
-  padding-top: 10px;
-}
-
-.nav-menu-movil {
-  transform: translateX(100%);
-  transition: all 1s ease;
-  position: relative;
-  top: -90px;
-}
-
-ul.nav-menu {
-  list-style-type: none;
 }
 
 #hamburguesa {
@@ -336,12 +305,30 @@ section.parent-btnb {
   height: 0px;
 }
 
-/* #nosotros {
+#episodios {
   position: absolute;
-  top: 1180px;
-} */
+  top: 500px;
+}
 
-@media screen and (max-width: 321px) {
+#nosotros {
+  position: absolute;
+  top: 1200px;
+}
+
+#entrevistas {
+  position: absolute;
+  top: 1900px;
+}
+
+#topicos {
+  position: absolute;
+  top: 2800px;
+}
+
+@media screen and (max-width: 401px) {
+  .menu > ul > li > a {
+    display: none;
+  }
   .menu-options {
     display: none;
     justify-self: flex-start;
@@ -359,7 +346,7 @@ section.parent-btnb {
   }
 
   .menu-options-links {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     color: #ffffff;
     letter-spacing: 0;
@@ -376,6 +363,7 @@ section.parent-btnb {
     display: block;
   }
 
+  #chk-nav-bar:checked ~ .menu-options,
   #chk-nav-bar:checked ~ #burger-open {
     display: none;
   }
@@ -385,32 +373,27 @@ section.parent-btnb {
     display: block;
   }
 
-  /* 
-  .mobile-menu {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    padding: 10px, 15px, 10px, 15px;
+  #episodios {
+    top: 385px;
   }
 
-  #hamburguesa:checked ~ .nav-menu-movil {
-    transform: translateX(0%);
+  #nosotros {
+    top: 1550px;
   }
 
-  .nav-menu-movil ul li a:hover {
-    background-color: (255, 166, 192);
-    color: #00f3bb;
-    text-decoration-line: line-through;
-    font-family: "IBM Plex Mono";
-    font-size: 16px;
-  } */
+  #entrevistas {
+    top: 2600px;
+  }
+
+  #topicos {
+    top: 4960px;
+  }
 
   .menu > ul > li > a,
   .btn,
   .title-1,
   .title-5,
-  .Episodios,
-  .Entrevistas,
+  section.Entrevistas,
   .phone-de,
   .rectangulo2,
   .last-box,
@@ -432,28 +415,31 @@ section.parent-btnb {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: -110%; */
     padding-left: 20px;
   }
 
   section.title-1b {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
     color: #060a24;
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
-    /* line-height: 0%; */
+    margin-left: -110px;
+    width: 70%;
+    min-width: 280px;
   }
 
   section .title-5b {
-    font-family: "IBM Plex Mono";
+    font-family: 'IBM Plex Mono';
     font-size: 13px;
     font-weight: normal;
     color: #060a24;
     letter-spacing: 1px;
     line-height: 20px;
     display: flex;
+    position: relative;
+    top: 10px;
   }
 
   section.parent-btnb {
@@ -474,6 +460,9 @@ section.parent-btnb {
     justify-content: center;
     align-items: center;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    position: relative;
+    top: 30px;
+    left: -10px;
   }
 
   .btnb:hover {
@@ -482,23 +471,54 @@ section.parent-btnb {
     height: 70px;
   }
 
-  section.rectangulob {
+  .rectangulo {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    top: 20px;
+    top: 40px;
     height: 1400px;
-    width: 320px;
+    width: 100%;
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 2%);
   }
 
-  .spotifyb {
+  .rectangulo p {
+    font-family: 'IBM Plex Sans';
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 60px;
+    padding-left: 27px;
+    font-weight: normal;
+  }
+
+  .spotify {
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: relative;
-    top: -120px;
+    left: 60px;
+    top: -220px;
+  }
+
+  .spotify-col1,
+  .spotify-col2 {
+    width: 110%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  .spotify-col2 {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spotify-col1 {
+    display: flex;
+    flex-direction: column;
   }
 
   section.phone-deb {
@@ -506,16 +526,16 @@ section.parent-btnb {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: -120px;
+    top: -20px;
   }
 
   .de-donde-venimosb p {
     width: 300px;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: 'IBM Plex Mono', monospace;
     color: #060a24;
     line-height: 24px;
     position: relative;
-    top: -60px;
+    top: -50px;
     left: -110px;
   }
 
@@ -528,9 +548,9 @@ section.parent-btnb {
 
   section.Topicos-b {
     display: flex;
-    width: 80%;
     position: relative;
-    left: 10px;
+    padding-left: 20px;
+    top: 150px;
     flex-wrap: wrap;
   }
 
@@ -539,38 +559,42 @@ section.parent-btnb {
     flex-direction: column;
     align-content: center;
     position: relative;
-    left: 110px;
+    justify-content: space-between;
+    top: 40px;
+    right: 140px;
     width: 30%;
+    height: 600px;
   }
 
   .algunos-de-nuestros-temasb p:nth-child(2) {
     width: 250px;
     position: relative;
-    left: -90px;
+    left: -70px;
   }
 
   .algunos-de-nuestros-temasb p:nth-child(4) {
     width: 250px;
     position: relative;
-    left: -85px;
+    left: -65px;
   }
 
   .algunos-de-nuestros-temasb p:nth-child(6) {
     width: 250px;
     position: relative;
-    left: -75px;
+    left: -60px;
   }
 
   .algunos-de-nuestros-temasb p:nth-child(8) {
     width: 250px;
     position: relative;
-    left: -80px;
+    left: -60px;
   }
 
   section.rectangulo2b {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    top: 230px;
     height: 341px;
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 8%);
@@ -585,7 +609,7 @@ section.parent-btnb {
     font-weight: normal;
     font-size: 18px;
     position: relative;
-    left: 20px;
+    left: 50px;
     cursor: pointer;
     transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
   }
@@ -607,7 +631,7 @@ section.parent-btnb {
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-    top: 55px;
+    top: 280px;
     padding-bottom: 35px;
   }
 
