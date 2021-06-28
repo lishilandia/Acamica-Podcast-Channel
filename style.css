@@ -1,11 +1,3 @@
-/* body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  scrollbar-width: none;
-} */
-
 * {
   padding: 0px;
   margin: 0px;
@@ -17,7 +9,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 html {
@@ -110,7 +102,7 @@ html {
 
 #chk-nav-bar:checked ~ .menu-options,
 #chk-nav-bar:checked ~ #burger-close {
-  display: none;
+  display: block;
 }
 
 .inicial {
@@ -289,35 +281,6 @@ section .title-5 {
   transform: translateY(-10px);
 }
 
-/* .mobile-menu {
-  display: none;
-}
-
-.nav-menu-movil li a {
-  height: 50px;
-  width: 300px;
-  display: flex;
-  color: white;
-  background-color: blue;
-  cursor: pointer;
-  font-family: IBM Plex Mono;
-  font-size: 16px;
-  text-decoration: none;
-  padding-left: 50px;
-  padding-top: 10px;
-} */
-
-/* .nav-menu-movil {
-  transform: translateX(100%);
-  transition: all 1s ease;
-  position: relative;
-  top: -90px;
-}
- */
-/* ul.nav-menu {
-  list-style-type: none;
-} */
-
 #hamburguesa {
   display: none;
 }
@@ -368,14 +331,14 @@ section.parent-btnb {
     display: none;
   }
   .menu-options {
-    /* display: none; */
+    display: none;
     justify-self: flex-start;
-    position: fixed;
+    position: absolute;
     top: 24px;
     width: 100%;
-    transform: translateX(120%);
+    /* transform: translateX(120%);
     transition: all 0.3s ease;
-    display: block;
+    display: block; */
     /* top: 50px;
     overflow: hidden; */
   }
@@ -418,8 +381,8 @@ section.parent-btnb {
   #chk-nav-bar:checked ~ .menu-options,
   #chk-nav-bar:checked ~ #burger-close {
     display: block;
-    transform: translateX(0%);
-    overflow: hidden;
+    /* transform: translateX(0%);
+    overflow: hidden; */
   }
 
   #episodios {
@@ -427,15 +390,15 @@ section.parent-btnb {
   }
 
   #nosotros {
-    top: 1600px;
+    top: 1550px;
   }
 
   #entrevistas {
-    top: 2550px;
+    top: 2600px;
   }
 
   #topicos {
-    top: 4900px;
+    top: 4960px;
   }
 
   .menu > ul > li > a,
@@ -571,25 +534,6 @@ section.parent-btnb {
     flex-direction: column;
   }
 
-  /*   section.rectangulob {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    top: 40px;
-    height: 1400px;
-    width: 320px;
-    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-    clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 2%);
-  }
-
-  .spotifyb {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: -80px;
-  } */
-
   section.phone-deb {
     display: flex;
     flex-direction: column;
@@ -617,9 +561,7 @@ section.parent-btnb {
 
   section.Topicos-b {
     display: flex;
-    /* width: 80%; */
     position: relative;
-    /* left: 10px; */
     padding-left: 20px;
     top: 150px;
     flex-wrap: wrap;
